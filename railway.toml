@@ -1,6 +1,6 @@
 [build]
-builder = "nixpacks"
+builder = "DOCKERFILE"
 
 [deploy]
 startCommand = "npx prisma db push && npm run start"
-restartPolicyType = "on-failure"
+restartPolicyType = "ON_FAILURE"
